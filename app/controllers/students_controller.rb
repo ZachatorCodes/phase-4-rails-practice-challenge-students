@@ -20,7 +20,7 @@ class StudentsController < ApplicationController
 
   def update
     student = find_student
-    student.update(student_params)
+    student.update!(student_params)
     render json: student, status: :accepted
   end
 

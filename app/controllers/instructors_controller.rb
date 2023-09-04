@@ -20,7 +20,7 @@ class InstructorsController < ApplicationController
 
   def update
     instructor = find_instructor
-    instructor.update(instructor_params)
+    instructor.update!(instructor_params)
     render json: instructor, status: :accepted
   end
 
